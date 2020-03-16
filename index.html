@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="css/bootstrap.min.css.map">
   <title>Maven Academy</title>
 </head>
-<body class="container">
+<body>
   <header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <div class="container">
-        <img src="images/maven_academy.svg" alt="">
+      <div class="container"> 
+        <img src="images/maven_academy.svg" alt=""> 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-3"><a class="nav-link" href="">Home</a>
           </li>
@@ -23,25 +23,22 @@
           </li>
           <li class="nav-item mx-3"><a class="nav-link" href="">Cart</a>
           </li>
-          <img class="mt-1 ml-auto" src="images/gift-icon.svg" alt="" width="50px" height="30px">
-          <div class="border text-primary text-center bg-light border rounded-circle p-0" style=" width: 18px; height: 18px; font-size: small;">
-            1
-          </div>
+          <img class="img" src="images/gift-icon.svg" alt="" width="50px" height="30px">
         </ul>
       </div>  
     </nav>
   </header>
   <section>
-    <div class="container" style="width: auto; height: 490px; background-color: aquamarine;">
+    <div class="container-fluid" style="height: auto; background-color: aquamarine;">
       <h1 class="text-center">Next level training in</h1> 
       <h1 class="text-center text-primary">User interface design</h1>
-      <img class="img-fluid" src="images/tech-mavens.png" alt="" width="350px" height="300px">
+      <div class="d-flex justify-content-center"><img class="img-fluid" src="images/tech-mavens.png" alt="" width="430px" height="350px"></div>
     </div>
   </section>
   <section>
-    <div class="container" style="width: auto; height: 490px; background-color: whitesmoke;"> 
+    <div class="container-fluid" style="height: auto; background-color: whitesmoke;"> 
       <div class="row">  
-        <div class="col-5 p-4 mt-5">
+        <div class="col-sm-6 p-4 mt-5">
           <h1>Why Maven Academy?</h1>
           <p class="justify-content">We’re disrupting the way you learn new technology by immersing you into real-world work conditions so you can learn what you need to hit the ground running in the top development jobs at the head of the line.</p>
 
@@ -50,12 +47,13 @@
             Read More
           </div>
         </div>
-          <ul class="col-6 list-unstyled mt-5 ml-auto">
+        <div class="col-sm">
+          <ul class="col-sm list-unstyled mt-5">
             <li class="media">
               <img class="mr-3 mt-1 p-2 border rounded bg-primary" src="images/career-changers.svg" alt="">
                 <div class="media-body">
                   <h4>Learn by creating </h4>
-                    <p class="justify">Master the art of code by working on projects that reflect the kind of work you will carry out for future employers and clients.
+                    <p class="">Master the art of code by working on projects that reflect the kind of work you will carry out for future employers and clients.
                     </p>  
                 </div>
             </li>
@@ -63,7 +61,7 @@
               <img class="mr-3 mt-1 p-2 border rounded bg-primary" src="images/career-boosters.svg" alt="">
                 <div class="media-body">
                   <h4>Expert coaching</h4>
-                    <p class="justify">Adopt the best-practice development techniques with on-demand access to mentors bringing their global tech exposure directly to you. Consistent feedback and mentorship refine your skills until you are comfortable producing efficient, production-grade code without hesitation.
+                    <p class="">Adopt the best-practice development techniques with on-demand access to mentors bringing their global tech exposure directly to you. Consistent feedback and mentorship refine your skills until you are comfortable producing efficient, production-grade code without hesitation.
                     </p>
                 </div>
             </li>
@@ -71,7 +69,7 @@
               <img class="mr-3 mt-1 p-2 border rounded bg-primary" src="images/recent-graduates.svg" alt="">
                 <div class="media-body">
                   <h4>Internship Programme</h4>
-                    <p class="justify">Don’t struggle with the job hunt! Hit the ground sprinting with our exclusive platform that allows you to Work, Learn, and Earn at the same time.
+                    <p class="">Don’t struggle with the job hunt! Hit the ground sprinting with our exclusive platform that allows you to Work, Learn, and Earn at the same time.
                     </p> 
                 </div>
             </li>
@@ -80,58 +78,65 @@
     </div>
   </section>
   <section>
-    <div class="container" style="width: auto; height: auto; background-color: aquamarine;">
+    <div class="container-fluid" style="height: auto; background-color: aquamarine;">
       <h3 class="text-center pt-5">Our Courses</h3>
       <p class="small text-center">Immersive training programs aimed at accelerating your career in tech, regardless of your experience level. We meet you where you’re at, and support you far beyond your goals!
       </p>
-    <div class="d-flex justify-content-between">
-        <div class="border border-light bg-light p-5 m-2">
-            <div>
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+        <div class="col-sm border border-light bg-light p-5 m-2">
+            <div class="text-center">
               <h6>Become a Full Stack Web Developer</h6>
               12 Week Course - In classroom
             </div>
-            <img class="" src="images/webdeveloper.png" alt="" width="220px" height="220px">
+            <div class="d-flex justify-content-center">
+              <img class="img-fluid" src="images/webdeveloper.png" alt="" width="220px" height="220px">
+            </div>
               <p class="text-center">R26,000,00 Excl Vat</p>
               <p class="text-center">View course detail</p>
-              <div class="ml-3 border rounded border-primary text-center text-primary" style="width: 190px;">
-                Add to enquiry
+              <div class="border border-primary border rounded text-center ">
+               <span class="text-primary">Add to enquiry</span>
               </div>
         </div>
-        <div class="border border-light bg-light p-5 m-2">
-          <div>
+        <div class="col-sm border border-light bg-light p-5 m-2">
+          <div class="text-center">
             <h6>Become a Front End Web Developer</h6>
             4 Week Course - In classroom
           </div>
-          <img src="images/frontend-dev-banner.png" alt="" width="220px" height="220px">
+          <div class="d-flex justify-content-center">
+            <img class="img-fluid" src="images/frontend-dev-banner.png" alt="" width="220px" height="220px">
+          </div>
             <p class="text-center">R26,000,00 Excl Vat</p>
             <p class="text-center">View course detail</p>
-            <div class="ml-3 border rounded border-primary text-center text-primary" style="width: 190px;">
-              Add to enquiry
+            <div class="border border-primary border rounded text-center">
+             <span class="text-primary">Add to enquiry</span>
             </div>
         </div>
-        <div class="border border-light bg-light p-5 m-2">
-          <div>
+        <div class="col-sm border border-light bg-light p-5 m-2">
+          <div class="text-center">
             <h6>Become a Java Spring Boot Developer</h6>
             12 Week Course - In classroom
           </div>
-          <img src="images/spring-boot-dev.png" alt="" width="220px" height="220px">
+          <div class="d-flex justify-content-center"> <img class="img-fluid" src="images/spring-boot-dev.png" alt="" width="220px" height="220px">
+          </div>
             <p class="text-center">R26,000,00 Excl Vat</p>
             <p class="text-center">View course detail</p>
-            <div class="ml-4 border rounded border-primary text-center text-primary" style="width: 190px;">
-              Add to enquiry
+            <div class="border border-primary border rounded text-center">
+              <span class="text-primary">Add to enquiry</span>
             </div>
-        </div>
-      </div>
+              </div>  
+               </div>
+                 </div>
       <img class="ml-2 my-4" src="images/arrow-right.svg" alt=""> 
     </div>
   </section>
   <section>
-    <div class="container" style="width: auto; height: 400px; background-color: whitesmoke;">
+    <div class="container-fluid" style="height: auto; background-color: whitesmoke;">
       <div class="p-5">
-        <h3>Career Services</h3>
-        <p class="small">The Maven Academy is committed to helping you secure a new job after finishing your bootcamp. With your hard-work and our help, we’re confident that you can get hired by a fantastic company.
+        <h3 class="text-center">Career Services</h3>
+        <p class="small text-center">The Maven Academy is committed to helping you secure a new job after finishing your bootcamp. With your hard-work and our help, we’re confident that you can get hired by a fantastic company.
         </p>
-          <div class="d-flex justify-content-between">
+          <div class="row d-flex justify-content-between">
             <img src="images/logo-zando.png" alt="" width="220px" height="120px">
             <img src="images/logo-nedbank.png" alt="" width="220px" height="120px">
             <img src="images/logo-vuma.png" alt="" width="220px" height="120px">
@@ -145,38 +150,114 @@
     </div>
   </section>
   <section>
-    <div class="container" style="width: auto; height: 490px; background-color: darkslategrey">
-      <div class="row"> 
-        <div class="col m-5 p-2"> 
+    <div class="container-fluid" style="height:auto; background-color: darkslategrey">
+      <div class="row">
+        <div class="col-sm m-3 p-2"> 
+          <img class="img-fluid" src="images/Kay.jpg" alt="" width="500px" height="320px">
+        </div>
+        <div class="col-sm m-5 p-2"> 
           <h1 class="text-light">What our students think about our courses</h1>
             <p class="text-light">Being a Digital Account Manager I’ve wanted to transition into the world of programming to better understand how to manage teams and build my own digital assets for web and mobile. I found that this 4 week web fundamentals course truly gave me all the necessary skills and tools to achieve my goals.</p>
             <p class="text-primary">- Kay Solomons</p>
-            <img style="color:skyblue;" src="images/arrow-right.svg" alt="">
+              <img class="img-fluid" style="color:skyblue;" src="images/arrow-right.svg" alt="">  
+        </div> 
+      </div>
+  </section>
+  <section>
+    <div class="container-fluid" style="height: auto; background-color: whitesmoke">
+      <div class="d-flex justify-content-center p-2">
+        <img class="img-fluid" src="images/contact-banner.png" alt="">
+      </div>
+      <div class="p-5">
+        <h1 class="text-center">Thank you for your enquiry.</h1>
+        <br>
+        <p class="text-center">One of our friendly course consultants and we’ll get back to you within 24 hours.</p>
+        <p class="text-center">Or call us directly on <a href="#">+27 (0)87 073 5694</a></p>
+        <p class="text-center pb-3 m-0">Need a quicker answer ? visit out Faq page :<a href="#"> Click here</a></p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid" style="height: auto; background-color: darkslategray">
+      <footer class="page-footer font-small indigo">
+        <div class="container text-center text-md-left">
+          <div class="row p-5">
+            <div class="col-sm mx-auto ">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary small">GENERAL</h5>
+              <br>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-light" href="#!">Home</a>
+                </li>
+                <br>
+                <li>
+                  <a class="text-light" href="#!">Faq</a>
+                </li>
+              </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-sm mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary small">WHY US</h5>
+              <br>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-light" href="#!">Why Study with us?</a>
+                </li>
+                <br>
+                <li>
+                  <a class="text-light" href="#!">Financial Aid - Study for Just R1</a>
+                </li>
+                <br>
+                <li>
+                  <a class="text-light" href="#!">Internship - Work, Learn & Earn</a>
+                </li>
+              </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-3 mx-auto align-iet">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary small">DEVELOPER COURSES</h5>
+              <br>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-light" href="#!">Full Stack Web Developer</a>
+                </li>
+              </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-3 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary small">CONTACT US</h5>
+              <br>
+              <ul class="list-unstyled">
+                <li>
+                  <img class="img-fluid mr-2" src="images/phone-icon.svg" alt=""><a class="text-light font-weight-bold" href="+27 21 461 68 17">+27 21 461 68 17</a>
+                </li>
+                <br>
+                <li>
+                  <img class="img-fluid mr-2" src="images/email-icon.svg" alt=""><a class="text-light" href="#!">hello@themavenacademy.one</a>
+                </li>
+                <br>
+                <li>
+                  <img class="img-fluid mr-2" src="images/location-icon.svg" alt=""><a class="text-light small p-1" href="#!">Office F01A, Brookside Office Park, 11 Imam Haron Road, Claremont, Western Cape, 7708</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-          <div class="col m-5 p-2"> 
-            <img class="float-right" src="images/Kay.jpg" alt="" width="500px" height="320px">
-          </div> 
-      </div>
-  </section>
-  <section>
-    <div class="container" style="width: auto; height: 400px; background-color: whitesmoke">
-      
+      </footer> 
     </div>
   </section>
-  <section>
-    <div class="container" style="width: auto; height: 400px; background-color: darkslategray">
-      
-    </div>
-  </section>
+  <!-- added in a new footer system using a navbar with some custome css -->
   <footer>
-    <div class="container bg-dark" style="height: 100px;">
-          <span class="text-light">All Rights Reserved, Maven Academy Ptd(Ltd).</span>  
-        <div class="float-right mt-5 mr-5">
-          <img class="border rounded bg-primary mx-1" src="images/facebook.svg" alt="">
-          <img class="border rounded bg-primary mx-1" src="images/twitter.svg" alt="">
-          <img class="border rounded bg-primary mx-1" src="images/instagram.svg" alt="">
-      </div>
-    </div>  
+    <nav class="navbar navbar-expand-sm p-3" style="height: auto; background-color: #343a40;">
+      <ul class="navbar-nav">
+        <li class="nav-items text-light small ml-3">All Rights Reserved, Maven Academy Ptd()Ltd.</li>
+      </ul>
+      <div class="ml-auto pr-4">
+        <img class="border rounded bg-primary mx-1" src="images/facebook.svg" alt="">
+        <img class="border rounded bg-primary mx-1" src="images/twitter.svg" alt="">
+        <img class="border rounded bg-primary mx-1" src="images/instagram.svg" alt="">
+    </div>
+    </nav> 
   </footer>
 </body>
 </html>
