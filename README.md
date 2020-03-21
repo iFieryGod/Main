@@ -10,6 +10,7 @@ and use vs code to see it in live server.
 4 internet access
 # Installing
 install VS Code from https://code.visualstudio.com/
+
 withing VS code install the extension live server.
 install Gitbash from https://gitforwindows.org/
 install github from https://github.com/ or signup online.
