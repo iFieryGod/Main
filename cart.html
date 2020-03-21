@@ -11,10 +11,14 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
       <!-- removed the div here -->
       <!-- <div class="container"> -->
-        <a href="#"><img class="maven_pic" src="images/maven_academy.svg" alt=""></a>
+        <a class="navbar-brand" href="#"><img class="maven_pic" src="images/maven_academy.svg" alt=""></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-3"><a class="nav-link" href="">Home</a>
           </li>
@@ -22,17 +26,96 @@
           </li>
           <li class="nav-item mx-3"><a class="nav-link" href="">Contact Us</a>
           </li>
-          <li class="nav-item mx-3"><a class="nav-link" href="">Cart</a>
+          <li class="nav-item mx-3"><a class="nav-link" href="" data-toggle="modal" data-target="#cartModal">Cart</a>
           </li>
           <a href="#"><img class="img" src="images/gift-icon.svg" alt="" width="50px" height="30px"></a>
         </ul>
+      </div>
         <!-- Testing out if i remove the div , how it will display in live server -->
       <!-- </div>   -->
     </nav>
   </header>
-  <section class="bg-light" style="height: 800px;">
-   
-  </section>
+  <section>
+    <div class="container mt-4 pt-5 pb-1">
+      <div class="main-title mt-3">
+        <h1>
+          Cart
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-6">
+         Products
+        </div>
+        <div class="col">
+         Price
+        </div>
+        <div class="col">
+         Quantity
+        </div>
+        <div class="col">
+         Total
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-4">
+         
+        </div>
+        <div class="col">
+         
+        </div>
+        <div class="col">
+         
+        </div>
+        <div class="col">
+         
+        </div>
+        
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-4">
+         
+        </div>
+        <div class="col">
+         
+        </div>
+        <div class="col">
+         
+        </div>
+        <div class="col">
+         
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <div>
+            <h3>Cart Totals</h3>
+          </div>
+          <div class="row">
+            <div class="col">
+              Subtitle
+            </div>
+          </div>
+            <hr>
+            <div class="row">
+              <div class="col">
+                Vat(15%)
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col">
+                Total
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section> 
   <section>
     <div class="container-fluid" style="height: auto; background-color: darkslategray">
       <footer class="page-footer font-small indigo">
@@ -80,7 +163,7 @@
               </ul>
             </div>
             <hr class="clearfix w-100 d-md-none">
-            <div class="col-md-3 mx-auto">
+            <div class="col-md-4 mx-auto">
               <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary small">CONTACT US</h5>
               <br>
               <ul class="list-unstyled">
@@ -115,5 +198,8 @@
     </nav>
     </nav>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

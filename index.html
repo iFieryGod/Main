@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container"> 
         <img src="images/maven_academy.svg" alt=""> 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -27,13 +27,13 @@
           </li>
           <li class="nav-item mx-3"><a class="nav-link" href="">Cart</a>
           </li>
-          <!-- <img class="img" src="images/gift-icon.svg" alt="" width="50px" height="30px"> -->
+          <img class="img" src="images/gift-icon.svg" alt="" width="50px" height="30px">
         </ul>
       </div>  
     </nav>
   </header>
   <section>
-    <div class="container-fluid" style="height: auto; background-color: aquamarine;">
+    <div class="container-fluid p-5 mt-5" style="height: auto; background-color: aquamarine;">
       <h1 class="text-center">Next level training in</h1> 
       <h1 class="text-center text-primary">User interface design</h1>
       <div class="d-flex justify-content-center"><img class="img-fluid" src="images/tech-mavens.png" alt="" width="430px" height="350px"></div>
@@ -141,10 +141,18 @@
         <p class="small text-center">The Maven Academy is committed to helping you secure a new job after finishing your bootcamp. With your hard-work and our help, we’re confident that you can get hired by a fantastic company.
         </p>
           <div class="row d-flex justify-content-between">
+            <div>
             <img src="images/logo-zando.png" alt="" width="220px" height="120px">
+           </div>
+          <div>
             <img src="images/logo-nedbank.png" alt="" width="220px" height="120px">
+          </div> 
+            <div>
             <img src="images/logo-vuma.png" alt="" width="220px" height="120px">
+          </div>
+          <div>
             <img src="images/logo-flash.png" alt="" width="220px" height="120px">
+          </div>
           </div>
           <img src="images/arrow-right.svg" alt="">
             <div class="mt-4 border rounded border-primary text-center text-primary" style="width: 140px;">
@@ -155,17 +163,41 @@
   </section>
   <section>
     <div class="container-fluid" style="height:auto; background-color: darkslategrey">
+      <div class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+      <div class="carousel-item active">
       <div class="row">
-        <div class="col-sm m-3 p-2"> 
-          <img class="img-fluid" src="images/Kay.jpg" alt="" width="500px" height="320px">
-        </div>
-        <div class="col-sm m-5 p-2"> 
-          <h1 class="text-light">What our students think about our courses</h1>
-            <p class="text-light">Being a Digital Account Manager I’ve wanted to transition into the world of programming to better understand how to manage teams and build my own digital assets for web and mobile. I found that this 4 week web fundamentals course truly gave me all the necessary skills and tools to achieve my goals.</p>
+        <div class="col-sm-4 m-5 p-2"> 
+          <h1 class="main-title text-light">What our students think about our courses</h1>
+            <p class="main-title-content text-light">Being a Digital Account Manager I’ve wanted to transition into the world of programming to better understand how to manage teams and build my own digital assets for web and mobile. I found that this 4 week web fundamentals course truly gave me all the necessary skills and tools to achieve my goals.</p>
             <p class="text-primary">- Kay Solomons</p>
               <img class="img-fluid" style="color:skyblue;" src="images/arrow-right.svg" alt="">  
-        </div> 
+        </div>
+        <div class="col-sm-6 mt-3 p-2"> 
+          <div class="d-flex justify-content-center pt-2">
+          <img class="img-fluid" src="images/Kay.jpg" alt="" width="auto" height="400px">
+          </div>
+        </div>
       </div>
+      </div> 
+      <div class="carousel-item">
+      <div class="row">
+        <div class="col-sm-4 m-5 p-2"> 
+          <h1 class="main-title text-light">What our students think about our courses</h1>
+            <p class="main-title-content text-light">Being a certified Scrum Master &amp; Product Owner - I have a general love for process and systems. The 4 Week Web Fundamentals course was the perfect fit to help me better equip myself for the technical roles I fulfil as a team lead in web projects. This course has helped take my career to new heights, and has thought me some seriously valuable insights into coding.</p>
+            <p class="text-primary">- Neil Lennon</p>
+              <img class="img-fluid" style="color:skyblue;" src="images/arrow-right.svg" alt="">  
+        </div>
+        <div class="col-sm-6 mt-3 p-2"> 
+          <div class="d-flex justify-content-center pt-2">
+          <img class="img-fluid" src="images/neil.jpg" alt="" width="auto" height="400px">
+          </div>
+        </div>
+      </div>
+      </div>
+      </div> 
+      </div>
+    </div>
   </section>
   <section>
     <div class="container-fluid" style="height: auto; background-color: whitesmoke">
@@ -228,7 +260,7 @@
               </ul>
             </div>
             <hr class="clearfix w-100 d-md-none">
-            <div class="col-md-3 mx-auto">
+            <div class="col-md-4 mx-auto">
               <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary small">CONTACT US</h5>
               <br>
               <ul class="list-unstyled">

@@ -7,3 +7,21 @@
 .maven_pic {
   margin-right: 6rem;
 }
+#addCart {
+    width: 250px;
+    height: 40px;
+    border-radius: 22.5px;
+    border: solid 2px #60a0e3;
+    text-align: center;
+    color: cornflowerblue;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+#box1 {
+ border-radius: 5px;
+ box-shadow: 0 15px 30px 0 rgba(25, 71, 128, 0.2); 
+}
+#submit {
+  border-radius: 25px;
+  width: 120px;
+}

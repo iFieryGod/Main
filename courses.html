@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css.map">
-  <title>Cart</title>
+  <link rel="stylesheet" href="css/main.css">
+  <title>Courses</title>
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
       <!-- removed the div here -->
-      <!-- <div class="container"> -->
-        <a href="#"><img class="maven_pic" src="images/maven_academy.svg" alt=""></a>
+      <div class="container">
+        <a class="navbar-brand" href="#"><img class="maven_pic" src="images/maven_academy.svg" alt=""></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-3"><a class="nav-link" href="">Home</a>
           </li>
@@ -26,148 +30,183 @@
           </li>
           <a href="#"><img class="img" src="images/gift-icon.svg" alt="" width="50px" height="30px"></a>
         </ul>
+      </div>
         <!-- Testing out if i remove the div , how it will display in live server -->
-      <!-- </div>   -->
+      </div>  
     </nav>
   </header>
   <section>
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
+      <div class="row" style="height: 40px;">
+
+      </div>
       <div class="row">
-        <div class="col-5">
-          <div class="ml-5 mt-5">
+        <div class="col-3">
+          <div class="my-5 ml-3">
             <div>
-              <h6>Become a Full Stack Web Developer</h6>
-              <p>12 Week Course - In classroom</p> 
+              <h6 class="font-weight-bold small text-center text-primary" style="font-size: 15px ;">Become a Full Stack Web Developer</h6>
+              <p class="text-center small">12 Week Course - In classroom</p> 
             </div>
-            <br>
-          <div>
-          <img class="image-fluid ml-5" src="images/full-stack-banner.png" alt="" style="width: 15rem;">
+          <div class="d-flex justify-content-center">
+          <img class="image-fluid ml-4" src="images/full-stack-banner.png" alt="" style="width: 15rem;">
           </div>
-          <p>R26,000,00 Excl Vat</p>
-          <p>View course detail</p>
-          <div class="ml-5 border rounded border-primary text-center text-primary" style="width: 190px;">
-                Add to enquiry
+          <p class="text-center text-primary font-weight-bold">R26,000,00 Excl Vat</p>
+          <div class="" style="width: 190px;">
+            <p id="addCart" style="padding-top: 5px;">Add to cart</p>  
+          </div>
+          </div>
+        </div>
+        <div class="col-8 mt-4 ml-5">
+          <div class="mb-5">
+            <h1>
+              Course Outline
+            </h1>
+          </div>
+          <div class="row ml-1 my-4">
+            <div class="col small">
+              <a href="">Pre Work</a>
+            </div>
+            <div class="col small">
+             <a href=""> Module 1</a>
+            </div>
+            <div class="col small">
+              <a href="">Module 2</a>
+            </div>
+            <div class="col small">
+              <a href="">Module 3</a>
+            </div>
+            <div class="col small">
+              <a href="">Module 4</a>
+            </div>
+            <div class="col-3 small">
+              <a href="">Master class electives</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="bg-light my-3 p-5 ml-4">
+              <div class="mb-4">
+                <h4>Pre-Work</h4>
               </div>
+              <div>
+                <p style="line-height: 2.19;">You don’t have to understand everything about the MEAN stack to dive in to the introductory tutorial. Your initial challenge will be to build Google’s official “Tour of Heroes” app. Don’t worry! We’re going to explain the hard parts in great detail during your course.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div id="box1" class="bg-light my-4 p-5 ml-4">
+              <ul class="list-unstyled">
+               <li class="media">
+                <img class="p-2 mr-5 border rounded bg-primary" src="images/bachler-icon.svg" alt="">
+              <div class="media-body">
+                <p>Want to find out more about what you will learn during our 12 Week Full Stack Web Developer Course.</p> 
+                <a data-toggle="modal" data-target="#courseModal" href="">Click here to Download the Curriculum </a>
+
+                <div class="modal" id="courseModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content" style="width: 800px;">
+                      <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <ul class="list-unstyled">
+                          <li class="media">
+                            <img class="p-2 mr-5 border rounded bg-primary" src="images/bachler-icon.svg" alt=""> 
+                           <div class="media-body">Download the full syllabus by entering your email address below. We will send you a link via email to download the brochure.
+                           </div>
+                          </li>
+                        </ul> 
+                      </div>
+                      <div class="modal-footer">
+                        <button id="submit" class="btn btn-outline-primary" data-dismiss="modal">Submit</button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <br>
+              </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-7">
-
-        </div>
       </div>
     </div>
+    <br>
+    <br>
   </section>
-  <section style="height: 400px;background-color: #101419;">
-    <!-- Footer -->
-<footer class="page-footer font-small indigo">
-
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary">GENERAL</h5>
-        <br>
-        <ul class="list-unstyled">
-          <li>
-            <a class="text-light" href="#!">Home</a>
-          </li>
-          <br>
-          <li>
-            <a class="text-light" href="#!">Faq</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary">WHY US</h5>
-        <br>
-        <ul class="list-unstyled">
-          <li>
-            <a class="text-light" href="#!">Why Study with us?</a>
-          </li>
-          <br>
-          <li>
-            <a class="text-light" href="#!">Financial Aid - Study for Just R1</a>
-          </li>
-          <br>
-          <li>
-            <a class="text-light" href="#!">Internship - Work, Learn & Earn</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto align-iet">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary">DEVELOPER COURSES</h5>
-        <br>
-        <ul class="list-unstyled">
-          <li>
-            <a class="text-light" href="#!">Full Stack Web Developer</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mx-auto">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary">CONTACT US</h5>
-        <br>
-        <ul class="list-unstyled">
-          <li>
-            <img class="img-fluid mr-2" src="images/phone-icon.svg" alt=""><a class="text-light" href="+27 21 461 68 17">+27 21 461 68 17</a>
-          </li>
-          <br>
-          <li>
-            <img class="img-fluid mr-2" src="images/email-icon.svg" alt=""><a class="text-light" href="#!">hello@themavenacademy.one</a>
-          </li>
-          <br>
-          <li>
-            <img class="img-fluid mr-2" src="images/location-icon.svg" alt=""><a href="#!"><small class="text-light">Office F01A, Brookside Office Park, 11 Imam Haron Road, Claremont, Western Cape, 7708</small></a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
-      
+  <section>
+    <div class="container-fluid" style="height: auto; background-color: darkslategray">
+      <footer class="page-footer font-small indigo">
+        <div class="container text-center text-md-left">
+          <div class="row p-5">
+            <div class="col-sm mx-auto ">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary small">GENERAL</h5>
+              <br>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-light" href="#!">Home</a>
+                </li>
+                <br>
+                <li>
+                  <a class="text-light" href="#!">Faq</a>
+                </li>
+              </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-sm mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary small">WHY US</h5>
+              <br>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-light" href="#!">Why Study with us?</a>
+                </li>
+                <br>
+                <li>
+                  <a class="text-light" href="#!">Financial Aid - Study for Just R1</a>
+                </li>
+                <br>
+                <li>
+                  <a class="text-light" href="#!">Internship - Work, Learn & Earn</a>
+                </li>
+              </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-3 mx-auto align-iet">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary small">DEVELOPER COURSES</h5>
+              <br>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-light" href="#!">Full Stack Web Developer</a>
+                </li>
+              </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-4 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-primary small">CONTACT US</h5>
+              <br>
+              <ul class="list-unstyled">
+                <li>
+                  <img class="img-fluid mr-2" src="images/phone-icon.svg" alt=""><a class="text-light font-weight-bold" href="+27 21 461 68 17">+27 21 461 68 17</a>
+                </li>
+                <br>
+                <li>
+                  <img class="img-fluid mr-2" src="images/email-icon.svg" alt=""><a class="text-light small" href="#!">hello@themavenacademy.one</a>
+                </li>
+                <br>
+                <li>
+                  <img class="img-fluid mr-2" src="images/location-icon.svg" alt=""><a class="text-light small p-0" href="#!">Office F01A, Brookside Office Park, 11 Imam Haron Road, Claremont, Western Cape, 7708</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer> 
+    </div>   
   </section>
   <footer>
-    <div>
     <nav class="navbar navbar-expand-sm" style="height: 100px; background-color: #000000;">
       <ul class="navbar-nav">
         <li class="nav-items text-light ml-5 footer-copyright">All Rights Reserved, Maven Academy Ptd()Ltd.</li>
@@ -178,7 +217,9 @@
         <a href="#"><img class="border rounded bg-primary mx-1" src="images/instagram.svg" alt=""></a>
     </div>
     </nav>
-    </nav>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
