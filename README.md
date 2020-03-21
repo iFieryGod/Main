@@ -2,17 +2,23 @@
 This is my first attempt at building a website. it is an attempt to replicate the webpage from the Zeplin application.
 # Getting Started
 From your Gitbash you can clone this address https://github.com/iFieryGod/Main.git
+
 and use vs code to see it in live server.
 # Prerequisites
 1 github
+
 2 gitbash
-3 vs code
+
+3 visual studio code
+
 4 internet access
 # Installing
 install VS Code from https://code.visualstudio.com/
 
 withing VS code install the extension live server.
+
 install Gitbash from https://gitforwindows.org/
+
 install github from https://github.com/ or signup online.
 # Running the tests
 Tests were run using Live Server which can be accessed through VS code.
