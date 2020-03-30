@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css.map">
-  <link rel="stylesheet" href="css/main.css">
   <title>Maven Academy</title>
 </head>
 <body>
@@ -28,7 +27,6 @@
                 </li>
                 <li id="text" class="nav-item mx-3"><a class="nav-link" href="cart.html">Cart</a>
                 </li>
-              <img class="img" src="images/gift-icon.svg" alt="" width="50px" height="30px">
             </ul>
           </div>
       </div>   
@@ -39,15 +37,17 @@
       <h1 id="text" class="text-center">Next level training in</h1> 
         <h1 id="wordtoggle" class="text-center text-primary">User interface design</h1>
           <div class="d-flex justify-content-center">
-            <img class="img-fluid" src="images/tech-mavens.png" alt="" width="430px" height="350px"></div>
-              <div id="text" class="text-center mb-3">
+            <img class="img-fluid" src="images/tech-mavens.png" alt="" width="430px" height="350px">
+          </div>
+        <div id="text" class="text-center mb-3">
                 Take your tech career to the next level with our immersive software development programmes 
-              </div>
-                <div class="d-flex justify-content-center">
-                  <button id="text" class="btn btn-primary" style="border-radius: 22.5px; width: 250px; height: 40px;">
-                    <small>FIND OUT MORE</small></button>
-                </div>
-           </div>
+        </div>
+      <div class="d-flex justify-content-center">
+        <button id="text" class="btn btn-primary" style="border-radius: 22.5px; width: 250px; height: 40px;">
+          <small>FIND OUT MORE</small>
+        </button>
+      </div>
+    </div>
   </section>
   <br>
   <br>
@@ -59,9 +59,11 @@
           <h1 id="text">Why Maven Academy?</h1>
             <p id="text" class="justify-content">We’re disrupting the way you learn new technology by immersing you into     real-world work conditions so you can learn what you need to hit the ground running in the top development jobs at the head of the line.</p>
              <p id="text">After two decades of building bespoke software solutions, and from our own hands-on coding experience, we’ve crafted a comprehensive software development curriculum that equips you for today’s complex technical work environments and prepares you for the future with exposure to cutting-edge technology.</p>
-               <div id="text" class="border border-primary text-center text-primary pt-2" style="width: 140px; height: 40px; border-radius: 22.5px;">
-               Read More
-                </div>
+               <div class="d-flex">
+                 <button id="read" class="border border-primary text-center text-primary pt-2" style="width: 140px; height: 40px; border-radius: 22.5px;">
+                  <span>Read More</span>
+                  </button>
+                </div>  
         </div>
           <div class="col-sm" id="box2">
             <ul class="col-sm list-unstyled mt-5">
@@ -161,52 +163,52 @@
                   <img src="images/logo-zando.png" alt="" width="220px" height="120px">
                    </div>
                     <div>
-                      <img src="images/logo-nedbank.png" alt="" width="220px" height="120px">
+                      <img id="img1" src="images/logo-nedbank.png" alt="" width="220px" height="120px">
                         </div> 
                           <div>
-                             <img src="images/logo-vuma.png" alt="" width="220px" height="120px">
+                             <img id="img2" src="images/logo-vuma.png" alt="" width="220px" height="120px">
                                </div>
                                   <div>
-                                    <img src="images/logo-flash.png" alt="" width="220px" height="120px">
+                                    <img id="img3" src="images/logo-flash.png" alt="" width="220px" height="120px">
                                       </div>
                                         </div>
                                             <img src="images/arrow-right.svg" alt="">
-                                              <div class="mt-4 border rounded border-primary text-center text-primary"  style="width: 140px;">
-                                                <a id="text" href="#">find out more</a>
+                                              <div id="findout" class="mt-4 border rounded border-primary text-center text-primary"  style="width: 140px;">
+                                                <a id="text" href="#"><span>find out more</span></a>
                                                 </div> 
               </div>
         </div>
   </section>
   <section>
-    <div class="container-fluid" style="height:auto; background-color: darkslategrey">
+    <div id="student" class="container-fluid" style="background-color: darkslategrey">
       <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
-             <div class="col-sm-4 m-5 p-2"> 
+             <div id="sen1" class="col-sm-4 m-5 p-2"> 
                <h1 id="text" class="main-title text-light">What our students think about our courses</h1>
                  <p id="text" class="main-title-content text-light">Being a Digital Account Manager I’ve wanted to transition into the world of programming to better understand how to manage teams and build my own digital assets for web and mobile. I found that this 4 week web fundamentals course truly gave me all the necessary skills and tools to achieve my goals.</p>
                   <p id="text" class="text-primary">- Kay Solomons</p>
                     <img class="img-fluid" style="color:skyblue;" src="images/arrow-right.svg" alt="">  
                     </div>
-                      <div class="col-sm-6 mt-3 p-2"> 
-                        <div class="d-flex justify-content-center pt-2">
-                          <img class="img-fluid" src="images/Kay.jpg" alt="" width="auto" height="400px">
+                      <div id="kay" class="col-sm-6 mt-4 p-3"> 
+                        <div class="d-flex justify-content-center">
+                          <img class="img-fluid" src="images/Kay.jpg">
                           </div>
                             </div>
                               </div>
                                 </div> 
                                    <div class="carousel-item">
                                  <div class="row">
-                                <div class="col-sm-4 m-5 p-2"> 
+                                <div id="sen2" class="col-sm-4 m-5 p-2"> 
                               <h1 id="text" class="main-title text-light">What our students think about our courses</h1>
                             <p id="text" class="main-title-content text-light">Being a certified Scrum Master &amp; Product Owner - I have a general love for process and systems. The 4 Week Web Fundamentals course was the perfect fit to help me better equip myself for the technical roles I fulfil as a team lead in web projects. This course has helped take my career to new heights, and has thought me some seriously valuable insights into coding.</p>
                           <p id="text" class="text-primary">- Neil Lennon</p>
-                        <img class="img-fluid" src="images/arrow-right.svg" alt="">  
+                        <img class="img-fluid" style="color:skyblue;" src="images/arrow-right.svg" alt="">  
                       </div>
-                    <div class="col-sm-6 mt-3 p-2"> 
+                    <div id="neil" class="col-sm-6 mt-3 p-3"> 
                   <div class="d-flex justify-content-center pt-2">
-                <img class="img-fluid" src="images/neil.jpg" alt="" width="auto" height="400px">
+                <img class="img-fluid" src="images/neil.jpg">
               </div>
             </div>
           </div>
@@ -300,14 +302,14 @@
   </section>
   <!-- added in a new footer system using a navbar with some custome css -->
   <footer>
-    <nav class="navbar navbar-expand p-3" style="height: auto; background-color: #0E1011;">
+    <nav class="navbar navbar-expand-sm p-3" style="height: auto; background-color: #0E1011;">
       <ul class="navbar-nav">
-        <li id="text" class="nav-items text-light small ml-3">All Rights Reserved, Maven Academy Ptd()Ltd.</li>
+        <li class="nav-items text-light ml-5 footer-copyright" id="text">All Rights Reserved, Maven Academy Ptd()Ltd.</li>
       </ul>
-        <div class="ml-auto pr-4">
-          <img class="border rounded bg-primary mx-1" src="images/facebook.svg" alt="">
-            <img class="border rounded bg-primary mx-1" src="images/twitter.svg" alt="">
-              <img class="border rounded bg-primary mx-1" src="images/instagram.svg" alt="">
+        <div id="pic01" class="pr-4">
+          <a href="#"><img class="border rounded bg-primary mx-1" src="images/facebook.svg" alt=""></a>
+          <a href="#"><img class="border rounded bg-primary mx-1" src="images/twitter.svg" alt=""></a>
+           <a href="#"><img class="border rounded bg-primary mx-1" src="images/instagram.svg" alt=""></a>
           </div>
         </nav> 
      </footer>
