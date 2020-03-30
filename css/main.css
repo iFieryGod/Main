@@ -1,101 +1,92 @@
-#hoverCart a {
-  position: absolute; /* Position them relative to the browser window */
-  left: -80px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-}
-#hoverCart a:hover {
-  top: 0; /* On mouse-over, make the elements appear as they should */
-}
-#cart {
-  top: 20px;
-  background-color: #4CAF50;
-}
-
 #pic01 {
   margin-left: auto;
 }
+
 #student {
   min-height: 500px;
 }
+
 .icon {
   background-color: black;
 }
+
 .image {
   margin-left: 23rem;
 }
+
 .maven_pic {
   margin-right: 6rem;
 }
+
 #addCart {
-    padding-top: 3px;
     width: 250px;
-    height: 40px;
-    border-radius: 22.5px;
-    border: solid 2px #60a0e3;
-    text-align: center;
-    color: cornflowerblue;
-    font-weight: bold;
-    margin-left: 1rem;
-    font-family: 'Titillium Web', sans-serif;
+    border-radius: 25px;
 }
+
 #box1 {
  border-radius: 5px;
  box-shadow: 0 15px 30px 0 rgba(25, 71, 128, 0.2); 
 }
+
 #submit {
   border-radius: 25px;
   width: 120px;
   font-family: 'Titillium Web', sans-serif;
 }
+
 #enquire {
   border-radius: 25px;
   width: 200px;
 }
+
 #text {
   font-family: 'Titillium Web', sans-serif;
 }
+
 #box2 {
   border-radius: 5px;
   box-shadow: 0 15px 30px 0 rgba(25, 71, 128, 0.2);
   background-color: #ffffff;
 }
+
 #box3 {
   box-shadow: 0 5px 20px 0 rgba(25, 71, 128, 0.2);
   background-color: #ffffff;
 }
+
 #read {
   font-family: 'Titillium Web', sans-serif;
 }
+
 #kay {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100%; 
 }
+
 #neil {
   max-width: 100%;
   max-height: 100%;
 }
+
 @media(max-width: 500px){
   #learn {
     display: block;
   }
 }
+
 @media(max-width: 500px){
   #text {
     text-align: center;
    }
 }
+
 @media(max-width: 500px){
   #read{
     margin-left: auto;
     margin-right: auto;
   }
 }
+
 @media(max-width: 328px){
   #kay {
     order: 1;
@@ -106,6 +97,7 @@
     order: 2;
   }
 }
+
 @media(max-width: 328px){
   #neil {
     order: 1;
@@ -116,6 +108,7 @@
     order: 2;
   }
 }
+
 @media(max-width: 328px){
   #img1 {
     display: none;
@@ -127,6 +120,7 @@
     display: none;
   }
 }
+
 @media(max-width: 328px){
   #links {
     margin-left: none;
@@ -135,6 +129,7 @@
     text-align: center;
   }
 }
+
 @media(max-width: 578px){
   #pre-work {
     margin-left: auto;
@@ -162,14 +157,22 @@
     display: block;
   }
 }
-@media(max-width: 545px){
+
+@media(max-width: 375px){
   #pic01 {
-    display: flex;
-    justify-content: start;
-    margin-left: none;
+    display: block;
+    margin-right: auto;
+  }
+  a #facebook{
+    display: block;
+    margin-right: auto;
+  }
+  a #twitter{
+    display: block;
     margin-right: auto;
   }
 }
+
 
 
 
