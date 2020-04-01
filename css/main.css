@@ -1,3 +1,28 @@
+#cartPic {
+  margin-top: 9px;
+  margin-left: 1rem;
+  display: none;
+}
+#tableHead {
+  border-bottom: 1px solid #dbdbdb;
+}
+#cartHead {
+  margin-left: 2rem;
+}
+#table {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+#webDev {
+ width: 94px;
+ height: 84px;
+}
+
+#webDev1{
+  width: 94px;
+  height: 84px;
+}
+
 #pic01 {
   margin-left: auto;
 }
@@ -18,11 +43,36 @@
   margin-right: 6rem;
 }
 
-#addCart {
+#addCart1 {
     width: 250px;
     border-radius: 25px;
 }
-
+#addCart2 {
+    width: 250px;
+    border-radius: 25px;
+}
+#addCart3 {
+    width: 250px;
+    border-radius: 25px;
+}
+#product {
+  font-family: 'Titillium Web', sans-serif;
+}
+#price {
+  font-family: 'Titillium Web', sans-serif;
+}
+#quantity {
+  font-family: 'Titillium Web', sans-serif;
+}
+#total {
+  font-family: 'Titillium Web', sans-serif;
+}
+#subtitle {
+  font-family: 'Titillium Web', sans-serif;
+}
+#vat {
+  font-family: 'Titillium Web', sans-serif;
+}
 #box1 {
  border-radius: 5px;
  box-shadow: 0 15px 30px 0 rgba(25, 71, 128, 0.2); 
@@ -34,7 +84,19 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
-#enquire {
+#enquire1 {
+  border-radius: 25px;
+  width: 200px;
+}
+#enquire2 {
+  border-radius: 25px;
+  width: 200px;
+}
+#enquire3 {
+  border-radius: 25px;
+  width: 200px;
+}
+#enquire4 {
   border-radius: 25px;
   width: 200px;
 }
@@ -67,6 +129,27 @@
   max-width: 100%;
   max-height: 100%;
 }
+#escapeBtn {
+  float: left;
+}
+#ele {
+  line-height: 0.4;
+}
+#firstCarousel {
+ margin-top: 3rem ;
+ margin-bottom: 3rem ;
+ margin-left: 1rem ;
+}
+#secondCarousel {
+  margin-top: 3rem ;
+ margin-bottom: 3rem ;
+ margin-left: 1rem ;
+}
+#thirdCarousel {
+  margin-top: 3rem ;
+ margin-bottom: 3rem ;
+ margin-left: 1rem ;
+}
 
 @media(max-width: 500px){
   #learn {
@@ -80,14 +163,15 @@
    }
 }
 
-@media(max-width: 500px){
+@media(max-width: 470px){
   #read{
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
   }
 }
 
-@media(max-width: 328px){
+@media(max-width: 420px){
   #kay {
     order: 1;
     max-width: 100%;
@@ -96,9 +180,6 @@
   #sen1 {
     order: 2;
   }
-}
-
-@media(max-width: 328px){
   #neil {
     order: 1;
     max-width: 100%;
@@ -108,6 +189,7 @@
     order: 2;
   }
 }
+
 
 @media(max-width: 328px){
   #img1 {
@@ -141,21 +223,6 @@
     margin-right: auto;
     max-width: 100%;
   }
-  #facebook {
-    float: left;
-    display: block;
-  }
-  #twitter {
-    clear: both;
-    display: block;
-  }
-  #instagram {
-    float: left;
-    display: block;
-  }
-  #navy {
-    display: block;
-  }
 }
 
 @media(max-width: 375px){
@@ -163,16 +230,31 @@
     display: block;
     margin-right: auto;
   }
-  a #facebook{
+  #facebook{
     display: block;
     margin-right: auto;
   }
-  a #twitter{
+   #twitter{
     display: block;
     margin-right: auto;
   }
 }
-
+@media(max-width: 720px){
+    #ele {
+      font-size: 10px;
+      float: none;
+    }
+}
+@media(max-width: 720px){
+  #webDev {
+    width: 40px ;
+    height: 40px ;
+  }
+  #webDev1 {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 
 

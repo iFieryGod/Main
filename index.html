@@ -14,8 +14,8 @@
 <!-- Nav section -->
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container"> 
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid"> 
         <a class="navbar-brand" href="#"><img src="images/maven_academy.svg" alt=""></a> 
          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -30,6 +30,7 @@
                 </li>
                 <li id="text" class="nav-item mx-3"><a class="nav-link" href="cart.html">Cart</a>
                 </li>
+                <img id="cartPic" class="img-fluid" src="images/cart-icon-white-png-4.png" style="width: 20px; height: 20px;" alt="">
             </ul>
           </div>
       </div>   
@@ -69,7 +70,7 @@
           <p id="text" class="justify-content">We’re disrupting the way you learn new technology by immersing you into     real-world work conditions so you can learn what you need to hit the ground running in the top development jobs at the head of the line.</p>
             <p id="text">After two decades of building bespoke software solutions, and from our own hands-on coding experience, we’ve crafted a comprehensive software development curriculum that equips you for today’s complex technical work environments and prepares you for the future with exposure to cutting-edge technology.
             </p>
-          <div class="d-flex">
+          <div id="read" class="d-flex">
             <button class="btn btn-outline-primary border border-primary text-center pt-2" style="width: 140px; height: 40px; border-radius: 22.5px;">
             <span id="read">Read More</span>
           </button>
@@ -130,7 +131,7 @@
                 <p id="text" class="text-center">R26,000,00 Excl Vat</p>
                 <p id="text" class="text-center">View course detail</p>
               <div class="d-flex justify-content-center">
-                <button id="enquire" class="btn btn-outline-primary border border-primary text-center pt-2" style="height: 40px;">
+                <button id="enquire1" class="btn btn-outline-primary border border-primary text-center pt-2" style="height: 40px;">
                   <span id="text">Add to enquiry</span>
                 </button>
               </div>
@@ -146,7 +147,7 @@
                   <p id="text" class="text-center">R26,000,00 Excl Vat</p>
                   <p id="text" class="text-center">View course detail</p>
                 <div class="d-flex justify-content-center">
-                  <button id="enquire" class="btn btn-outline-primary border border-primary text-center pt-2" style="height: 40px;">
+                  <button id="enquire2" class="btn btn-outline-primary border border-primary text-center pt-2" style="height: 40px;">
                     <span id="text">Add to enquiry</span>
                   </button>
                 </div>      
@@ -162,7 +163,7 @@
                 <p id="text" class="text-center">R26,000,00 Excl Vat</p>
                 <p id="text" class="text-center">View course detail</p>
               <div class="d-flex justify-content-center">
-                <button id="enquire" class="btn btn-outline-primary border border-primary text-center pt-2" style=" height: 40px;">
+                <button id="enquire3" class="btn btn-outline-primary border border-primary text-center pt-2" style=" height: 40px;">
                   <span id="text">Add to enquiry</span>
                 </button>
               </div>
@@ -209,7 +210,7 @@
 
 <section>
   <div id="student" class="container-fluid" style="background-color: darkslategrey">
-    <div class="carousel slide" data-ride="carousel">
+    <div class="carousel slide" data-ride="carousel" id="slide1">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="row">
@@ -217,11 +218,11 @@
               <h1 id="text" class="main-title text-light">What our students think about our courses</h1>
                 <p id="text" class="main-title-content text-light">Being a Digital Account Manager I’ve wanted to transition into the world of programming to better understand how to manage teams and build my own digital assets for web and mobile. I found that this 4 week web fundamentals course truly gave me all the necessary skills and tools to achieve my goals.</p>
                 <p id="text" class="text-primary">- Kay Solomons</p>
-                  <img class="img-fluid" style="color:skyblue;" src="images/arrow-right.svg" alt="">  
+                  <img class="img-fluid mt-5" style="color:skyblue;" src="images/arrow-right.svg" alt="">  
                   </div>
                     <div id="kay" class="col-sm-6 mt-4 p-3"> 
                       <div class="d-flex justify-content-center">
-                        <img class="img-fluid" src="images/Kay.jpg">
+                        <img class="d-block img-fluid" src="images/Kay.jpg">
                         </div>
                           </div>
                             </div>
@@ -232,17 +233,28 @@
                             <h1 id="text" class="main-title text-light">What our students think about our courses</h1>
                           <p id="text" class="main-title-content text-light">Being a certified Scrum Master &amp; Product Owner - I have a general love for process and systems. The 4 Week Web Fundamentals course was the perfect fit to help me better equip myself for the technical roles I fulfil as a team lead in web projects. This course has helped take my career to new heights, and has thought me some seriously valuable insights into coding.</p>
                         <p id="text" class="text-primary">- Neil Lennon</p>
-                      <img class="img-fluid" style="color:skyblue;" src="images/arrow-right.svg" alt="">  
+                        <img class="img-fluid mt-5" style="color:skyblue;" src="images/arrow-right.svg" alt="">  
                     </div>
                   <div id="neil" class="col-sm-6 mt-3 p-3"> 
                 <div class="d-flex justify-content-center pt-2">
-              <img class="img-fluid" src="images/neil.jpg">
+              <img class="d-block img-fluid" src="images/neil.jpg">
             </div>
           </div>
         </div>
-      </div>
     </div> 
   </div>
+  <div>
+  <!-- Controls -->
+  <a href="#slide1" class="carousel-control-prev" data-slide="prev">
+    <img class="img-fluid" style="color:skyblue;" src="images/arrow-right.svg" alt=""> 
+  </a>
+  </div>
+
+  <div>
+  <!-- Controls -->
+  <a href="#slide1" class="carousel-control-next" data-slide="next">
+    <img class="img-fluid" style="color:skyblue;" src="images/arrow-right.svg" alt=""> 
+  </a>
 </div>
 </section>
 
@@ -352,5 +364,8 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/app.js">
+
+</script>
 </body>
 </html>
