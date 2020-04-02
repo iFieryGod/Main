@@ -1,3 +1,32 @@
+body{
+  padding:40px;
+  background-color: #121212;
+}
+
+#wordToggle {
+  border-right: solid 3px rgba(0, 255, 0, 0.75); /* This sets the cursor border and color and opacity*/
+  white-space: nowrap; /* Keeps the content on a single line */
+  overflow: hidden; /*Ensures the content is not revealed until the animation*/ 
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto; /* This will ensure that scrolling effect as the typing happens */
+}
+
+#wordToggle {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;
+  /* This sets the cursor steps and the time of the steps*/
+}
+@keyframes animated-text {
+  from{width: 0;}
+  to{width: 390px;}
+}
+@keyframes animated-cursor {
+  from{border-right-color: rgba(0, 255, 0, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+
 #cartPic {
   margin-top: 9px;
   margin-left: 1rem;
@@ -189,7 +218,6 @@
     order: 2;
   }
 }
-
 
 @media(max-width: 328px){
   #img1 {
