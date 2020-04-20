@@ -1,5 +1,9 @@
+.wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
 body{
-  padding:40px;
   background-color: #121212;
 }
 
@@ -14,23 +18,21 @@ body{
 }
 
 #wordToggle {
-  animation: animated-text 4s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;
+  animation: animated-text 3s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;
   /* This sets the cursor steps and the time of the steps*/
 }
 @keyframes animated-text {
   from{width: 0;}
-  to{width: 390px;}
+  to{width: 380px;}
 }
 @keyframes animated-cursor {
   from{border-right-color: rgba(0, 255, 0, 0.75);}
   to{border-right-color: transparent;}
 }
 
-
 #cartPic {
   margin-top: 9px;
   margin-left: 1rem;
-  display: none;
 }
 #tableHead {
   border-bottom: 1px solid #dbdbdb;
@@ -192,7 +194,7 @@ body{
    }
 }
 
-@media(max-width: 470px){
+@media(max-width: 500px){
   #read{
     margin-left: auto;
     margin-right: auto;
@@ -200,7 +202,7 @@ body{
   }
 }
 
-@media(max-width: 420px){
+@media(max-width: 500px){
   #kay {
     order: 1;
     max-width: 100%;
@@ -283,29 +285,3 @@ body{
     height: 40px;
   }
 }
-
-
-
-
-/* #wordtoggle {
-  color: #fff;
-  font-family: 'Titillium Web', sans-serif; */
-  /* overflow: hidden; Ensures the content is not revealed until the animation */
-  /* border-right: .15em solid orange; The typwriter cursor */
-  /* white-space: nowrap; Keeps the content on a single line */
-  /* margin: 0 auto; Gives that scrolling effect as the typing happens */
-  /* letter-spacing: .15em; Adjust as needed */
-  /* animation:  */
-    /* typing 3s steps(30, end),
-    blink-caret .5s step-end, infinite;
-} */
-
-/* @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-} */
