@@ -1,5 +1,5 @@
 'use strict'
-let carts = document.querySelectorAll('.cartEle');
+let carts = document.querySelectorAll('.add-to-cart-btn');
 
 let products = [
   {
@@ -93,18 +93,18 @@ function displayCart(){
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
-      <td class="product"> 
+      <td class="all-maven-text"> 
         <i class="fas fa-times"></i>
-        <img id="webDev" src="images/${item.tag}.png">
+        <img id="product-details" src="images/${item.tag}.png">
         <span>${item.name}</span>
       </td>
-      <td class="price">$${item.price},00</td> 
-      <td class="quantity>
+      <td class="all-maven-text">$${item.price},00</td> 
+      <td class="all-maven-text">
             <i class="fas fa-arrow-left"></i>
             <span>${item.inCart}</span>
             <i class="fas fa-arrow-right"></i>
       </td> 
-      <td class="total">
+      <td class="all-maven-text">
       $${item.inCart * item.price},00
       </td>
       `
@@ -112,34 +112,34 @@ function displayCart(){
     productContainer.innerHTML += `
     <div class="float-right">
     <div class="row">
-      <div class="col-sm">
-          <h3 id="text">Cart Totals</h3>
+      <div class="col-sm all-maven-text">
+          <h3>Cart Totals</h3>
       </div>  
       </div> 
         <div class="row">
-          <div class="col-sm small">
+          <div class="col-sm small all-maven-text">
             Subtitle
           </div>
-          <span id="subtitle" class="mr-3"></span>
+          <span class="mr-3 all-maven-text"></span>
         </div>
           <hr>
           <div class="row">
             <div class="col-sm small">
               Vat(15%)
             </div>
-            <p id="vat"></p>
+            <p class="all-maven-text"></p>
           </div>
           <hr>
           <div class="row">
-            <div class="col-sm small">
+            <div class="col-sm small all-maven-text">
               Total
             </div>
-            <p id="total"></p>
+            <p class="all-maven-text"></p>
           </div>
           <br>
             <div class="row">
-              <button class="btn btn-outline-primary text-center" id="enquire4">
-              <span id="text">Enquire</span> 
+              <button class="btn btn-outline-primary text-center add-to-enquiry-btn">
+              <span class="all-maven-text">Enquire</span> 
               </button>
             </div>
           </div>

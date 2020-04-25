@@ -1,12 +1,82 @@
-.wrapper {
+body {
+  background-color: #121212;
+}
+
+#main-cart-icon {
+  margin-top: 9px;
+  margin-left: 1rem;
+}
+/* Styling all text in all pages */
+.all-maven-text {
+  font-family: 'Titillium Web', sans-serif;
+}
+/* Navbar color */
+.navbar-color {
+  background-color: #36414c;
+}
+
+/* Main-Section */
+.main-section {
+  height: auto;
+  background-color: rgba(91, 157, 227, 0.08);
+}
+
+/* main-body-section */
+.main-body-section {
+  height: auto;
+  background-color:  #ffffff;
+}
+/* main-course-section */
+.main-course-section {
+  height: auto;
+  background-color: rgba(91, 157, 227, 0.08);
+}
+
+.main-courses-columns {
+  box-shadow: 0 5px 20px 0 rgba(25, 71, 128, 0.2);
+  background-color: #ffffff;
+}
+
+.course-main-section {
+  margin-bottom: 10rem;
+}
+/* career-section */
+.career-section {
+  height: auto;
+  background-color: whitesmoke;
+}
+
+.information-section {
+  background-color: #36414c;
+}
+
+.bottom-contact-section {
+  height: auto;
+  background-color: whitesmoke;
+}
+
+.bottom-section {
+  height: auto;
+  background-color: #343a40;
+}
+
+.footer-section {
+  height: 100px;
+  background-color: #36414c;
+}
+
+/* Courses page main-section */
+.second-container {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+/* styling the owl carousel */
+.owl-wrapper {
   width: 100%;
   height: auto;
   overflow: hidden;
 }
-body{
-  background-color: #121212;
-}
-
+/* Creating the typing effect */
 #wordToggle {
   border-right: solid 3px rgba(0, 255, 0, 0.75); /* This sets the cursor border and color and opacity*/
   white-space: nowrap; /* Keeps the content on a single line */
@@ -16,7 +86,7 @@ body{
   color: rgba(255, 255, 255, 0.7);
   margin: 0 auto; /* This will ensure that scrolling effect as the typing happens */
 }
-
+/* Creating the animation for the typing effect */
 #wordToggle {
   animation: animated-text 3s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;
   /* This sets the cursor steps and the time of the steps*/
@@ -30,156 +100,78 @@ body{
   to{border-right-color: transparent;}
 }
 
-#cartPic {
-  margin-top: 9px;
-  margin-left: 1rem;
-}
-#tableHead {
-  border-bottom: 1px solid #dbdbdb;
-}
-#cartHead {
-  margin-left: 2rem;
-}
-#table {
-  margin-left: 2rem;
-  margin-top: 2rem;
-}
-#webDev {
- width: 94px;
- height: 84px;
+.course-carousel {
+  margin-top: 3rem ;
+  margin-bottom: 3rem ;
+  margin-left: 1rem ;
+ }
+ 
+.social-media-icons {
+  margin-top: 1rem;
+  float: right;
 }
 
-#webDev1{
+#product-details {
   width: 94px;
   height: 84px;
+ }
+
+.add-to-cart {
+  width: 250px;
+  border-radius: 25px;
 }
 
-#pic01 {
-  margin-left: auto;
+.add-to-enquiry-btn {
+  border-radius: 25px;
+  width: 200px;
 }
 
-#student {
-  min-height: 500px;
+.student-pictures {
+  max-width: 100%;
+  max-height: 100%; 
 }
 
-.icon {
-  background-color: black;
+#cart-table {
+  border-bottom: 1px solid #dbdbdb;
+}
+#cart-heading {
+  margin-left: 2rem;
+}
+#cart-table-amounts {
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 .image {
   margin-left: 23rem;
 }
 
-.maven_pic {
-  margin-right: 6rem;
-}
-
-#addCart1 {
-    width: 250px;
-    border-radius: 25px;
-}
-#addCart2 {
-    width: 250px;
-    border-radius: 25px;
-}
-#addCart3 {
-    width: 250px;
-    border-radius: 25px;
-}
-#product {
-  font-family: 'Titillium Web', sans-serif;
-}
-#price {
-  font-family: 'Titillium Web', sans-serif;
-}
-#quantity {
-  font-family: 'Titillium Web', sans-serif;
-}
-#total {
-  font-family: 'Titillium Web', sans-serif;
-}
-#subtitle {
-  font-family: 'Titillium Web', sans-serif;
-}
-#vat {
-  font-family: 'Titillium Web', sans-serif;
-}
-#box1 {
+#second-container {
  border-radius: 5px;
  box-shadow: 0 15px 30px 0 rgba(25, 71, 128, 0.2); 
 }
 
-#submit {
+#modal-x-button {
+  border: 1px solid #4a90e2;
+  border-radius: 50%;
+  object-fit: contain;
+  color: #4a90e2;
+}
+
+#modal-submit-button {
   border-radius: 25px;
-  width: 120px;
   font-family: 'Titillium Web', sans-serif;
-}
-
-#enquire1 {
-  border-radius: 25px;
-  width: 200px;
-}
-#enquire2 {
-  border-radius: 25px;
-  width: 200px;
-}
-#enquire3 {
-  border-radius: 25px;
-  width: 200px;
-}
-#enquire4 {
-  border-radius: 25px;
-  width: 200px;
-}
-
-#text {
-  font-family: 'Titillium Web', sans-serif;
-}
-
-#box2 {
-  border-radius: 5px;
-  box-shadow: 0 15px 30px 0 rgba(25, 71, 128, 0.2);
-  background-color: #ffffff;
-}
-
-#box3 {
-  box-shadow: 0 5px 20px 0 rgba(25, 71, 128, 0.2);
-  background-color: #ffffff;
 }
 
 #read {
   font-family: 'Titillium Web', sans-serif;
 }
 
-#kay {
-  max-width: 100%;
-  max-height: 100%; 
-}
-
-#neil {
-  max-width: 100%;
-  max-height: 100%;
-}
-#escapeBtn {
+#close-button {
   float: left;
 }
 #ele {
   line-height: 0.4;
-}
-#firstCarousel {
- margin-top: 3rem ;
- margin-bottom: 3rem ;
- margin-left: 1rem ;
-}
-#secondCarousel {
-  margin-top: 3rem ;
- margin-bottom: 3rem ;
- margin-left: 1rem ;
-}
-#thirdCarousel {
-  margin-top: 3rem ;
- margin-bottom: 3rem ;
- margin-left: 1rem ;
 }
 
 @media(max-width: 500px){
@@ -189,7 +181,7 @@ body{
 }
 
 @media(max-width: 500px){
-  #text {
+  .all-maven-text {
     text-align: center;
    }
 }
@@ -202,21 +194,13 @@ body{
   }
 }
 
-@media(max-width: 500px){
-  #kay {
+@media(max-width: 580px){
+  .student-pictures {
     order: 1;
     max-width: 100%;
     max-height: 100%;
   }
-  #sen1 {
-    order: 2;
-  }
-  #neil {
-    order: 1;
-    max-width: 100%;
-    max-height: 100%;
-  }
-  #sen2 {
+  .information-sentence {
     order: 2;
   }
 }
@@ -255,19 +239,15 @@ body{
   }
 }
 
-@media(max-width: 375px){
-  #pic01 {
-    display: block;
-    margin-right: auto;
+@media(max-width: 500px){
+  .social-media-icons {
+    margin-top: 0;
+    float: none;
   }
-  #facebook{
-    display: block;
-    margin-right: auto;
-  }
-   #twitter{
-    display: block;
-    margin-right: auto;
-  }
+  .social-media-platforms{
+    float: left;
+    align-self: flex-start;
+    margin: 5px 5px;
 }
 @media(max-width: 720px){
     #ele {
