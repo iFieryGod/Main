@@ -87,10 +87,12 @@ function totalCost(product) {
 
 function displayCart(){
   let cartItems = localStorage.getItem('productsInCart');
+  let cartCost = localStorage.getItem('totalCost');
+  cartCost = JSON.parse(cartCost);
   cartItems = JSON.parse(cartItems);
   let productContainer = document.querySelector('.cart-container');
   let productContainerBelow = document.querySelector('.cartContainerBelow');
-  if( cartItems && productContainer && productContainerBelow) {
+  if( cartItems && productContainer && cartCost && productContainerBelow) {
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
@@ -111,7 +113,7 @@ function displayCart(){
       `
     }),
     
-    Object.values(cartItems).map(item => {
+    Object.values(cartItems || cartCost).map(item => {
     productContainerBelow.innerHTML = '';  
     productContainerBelow.innerHTML += `
     <td id="empty-block"></td>
@@ -137,7 +139,7 @@ function displayCart(){
           <div class="small all-maven-text text-left">
               Total
           </div>
-            <p class="all-maven-text text-left">$${item.inCart * item.price},00</p>
+            <p class="all-maven-text text-left">$${cartCost},00</p>
           </div>
         <hr>
           <button style="width: 150px;;" class="btn btn-outline-primary text-center">
