@@ -1,5 +1,15 @@
+* {
+  overflow-x: hidden;
+}
 body {
   background-color: #121212;
+}
+
+#main-table-cart {
+  margin-top: 150px;
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 100%;
 }
 
 #main-cart-icon {
@@ -56,11 +66,13 @@ body {
 }
 
 .bottom-section {
+  width: 100%;
   height: auto;
   background-color: #343a40;
 }
 
 .footer-section {
+  width: 100%;
   height: 100px;
   background-color: #36414c;
 }
@@ -134,11 +146,8 @@ body {
 #cart-table {
   border-bottom: 1px solid #dbdbdb;
 }
-#cart-heading {
-  margin-left: 2rem;
-}
+
 #cart-table-amounts {
-  margin-left: 2rem;
   margin-top: 2rem;
 }
 

@@ -101,7 +101,7 @@ function displayCart(){
       <td class="all-maven-text">$${item.price},00</td> 
       <td class="all-maven-text">
             <i class="fas fa-arrow-left"></i>
-            <span>${item.inCart}</span>
+            <span>  ${item.inCart} </span>
             <i class="fas fa-arrow-right"></i>
       </td> 
       <td class="all-maven-text">
@@ -110,39 +110,39 @@ function displayCart(){
       `
     })
     productContainer.innerHTML += `
-    <div class="float-right">
-    <div class="row">
-      <div class="col-sm all-maven-text">
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <div class="all-maven-text">
           <h3>Cart Totals</h3>
       </div>  
       </div> 
-        <div class="row">
-          <div class="col-sm small all-maven-text">
+          <div class="small all-maven-text">
             Subtitle
           </div>
-          <span class="mr-3 all-maven-text"></span>
+          <span class="all-maven-text"></span>
         </div>
-          <hr>
-          <div class="row">
-            <div class="col-sm small">
+        <hr>
+            <div class="small">
               Vat(15%)
             </div>
             <p class="all-maven-text"></p>
           </div>
           <hr>
-          <div class="row">
-            <div class="col-sm small all-maven-text">
+            <div class="small all-maven-text">
               Total
             </div>
             <p class="all-maven-text"></p>
           </div>
-          <br>
-            <div class="row">
-              <button class="btn btn-outline-primary text-center add-to-enquiry-btn">
+          <hr>
+              <button style="width: 150px;;" class="btn btn-outline-primary text-center">
               <span class="all-maven-text">Enquire</span> 
               </button>
             </div>
-          </div>
+            </td>
+          </tr>
     `
   }
 }

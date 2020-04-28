@@ -44,14 +44,12 @@
 
 <!-- Main Section -->
 
-<section>
-  <div class="container-fluid mt-5 pt-5 pb-1" style="height: auto;">
-    <div class="main-title mt-3 mb-5">
-      <h1 id="cart-heading">Cart</h1>
-    </div>
+<section id="main-table-cart">
+  <div>
+    <h1 class="ml-2">Cart</h1>
     <table id="cart-table-amounts" class="table table-borderless">
       <thead id="cart-table">
-        <tr class="all-maven-text">
+        <tr>
           <th style="width: 400px; font-size: 12px;">Product</th>
           <th style="width: 150px; font-size: 12px">Price</th>
           <th style="width: 150px; font-size: 12px">Quantity</th>
@@ -60,12 +58,11 @@
       </thead>
       <tbody class="cart-container">
         <tr>
-          <td><div class="d-none float-left mx-3">
-          <button id="close-button" class="close m-3">&times;</button>
-          </div></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <div class="d-none float-left mx-3">
+            <button id="close-button" class="close m-3">&times;</button>
+            </div>
+          </td>
         </tr>
       </tbody>
     </table>
