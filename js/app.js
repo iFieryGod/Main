@@ -101,19 +101,20 @@ function displayCart(){
         <img id="product-details" src="images/${item.tag}.png">
         <span>${item.name}</span>
       </td>
-      <td class="all-maven-text">$${item.price},00</td> 
+      <td class="all-maven-text">R${item.price},00 Excl Vat</td> 
       <td class="all-maven-text">
-            <i class="fas fa-arrow-left"></i>
-            <span>  ${item.inCart} </span>
-            <i class="fas fa-arrow-right"></i>
+        <div class="cart-items-number">
+        <span>${item.inCart}</span>
+        </div>
       </td> 
       <td class="all-maven-text">
-      $${item.inCart * item.price},00
+      R${item.inCart * item.price},00 Excl Vat
       </td>
       `
     }),
     
     Object.values(cartItems || cartCost).map(item => {
+    let cartTotalCost = cartCost * 15 / 100;
     productContainerBelow.innerHTML = '';  
     productContainerBelow.innerHTML += `
     <td id="empty-block"></td>
@@ -125,21 +126,21 @@ function displayCart(){
       </div>  
       </div> 
         <div class="small all-maven-text text-left">
-          Subtitle
+          Subtotal
         </div>
-          <span class="all-maven-text text-left"></span>
+          <span class="all-maven-text text-left">R${cartCost},00 Excl Vat</span>
         </div>
         <hr>
           <div class="small all-maven-text text-left">
             Vat(15%)
           </div>
-          <p class="all-maven-text text-left"></p>
+          <p class="all-maven-text text-left">R${cartTotalCost},00</p>
           </div>
         <hr>
           <div class="small all-maven-text text-left">
               Total
           </div>
-            <p class="all-maven-text text-left">$${cartCost},00</p>
+            <p class="all-maven-text text-left">R${cartCost + cartTotalCost},00 Excl Vat</p>
           </div>
         <hr>
           <button style="width: 150px;;" class="btn btn-outline-primary text-center">

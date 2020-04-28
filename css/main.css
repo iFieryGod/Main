@@ -47,6 +47,7 @@ body {
 
 .course-main-section {
   margin-bottom: 10rem;
+  margin-top: 8rem;
 }
 /* career-section */
 .career-section {
@@ -91,7 +92,6 @@ body {
   border-right: solid 3px rgba(0, 255, 0, 0.75); /* This sets the cursor border and color and opacity*/
   white-space: nowrap; /* Keeps the content on a single line */
   overflow: hidden; /*Ensures the content is not revealed until the animation*/ 
-  font-family: 'Titillium Web', sans-serif;
   font-size: 40px;
   color: rgba(255, 255, 255, 0.7);
   margin: 0 auto; /* This will ensure that scrolling effect as the typing happens */
@@ -108,6 +108,12 @@ body {
 @keyframes animated-cursor {
   from{border-right-color: rgba(0, 255, 0, 0.75);}
   to{border-right-color: transparent;}
+}
+#style-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .course-carousel {
@@ -132,7 +138,7 @@ body {
 }
 
 .add-to-enquiry-btn {
-  border-radius: 25px;
+  border-radius: 35px;
   width: 200px;
 }
 
@@ -156,10 +162,15 @@ body {
 }
 
 #modal-x-button {
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 22px;
   border: 1px solid #4a90e2;
-  border-radius: 50%;
-  object-fit: contain;
-  color: #4a90e2;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 2rem;
+  color: #4e90e2;
 }
 
 #modal-submit-button {
@@ -167,20 +178,33 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
-#read {
-  font-family: 'Titillium Web', sans-serif;
-}
-
 #close-button {
   float: left;
 }
-#ele {
-  line-height: 0.4;
+
+#course-control {
+  position: absolute;
+  top: 0;
 }
 
+.cart-items-number {
+  width: 4.5rem;
+  border: 1px solid #4e90e2;
+  border-radius: 25px;
+  text-align: center;
+}
+
+#course-outline {
+  font-size: 3.188rem;
+}
 /* .student-picture and .information-sentence: This is to rearrange the students pictures in the students carousel so that the pictures appear on top of the text associated with them 
 #empty-block: This is displayed to none on small screens because i used these blocks to position my tiny  cart on the cart page, when i remove the empty blocks the tiny cart will position nicely on small screen sizes.
 */
+@media(min-width: 600px){
+  #style-modal{
+    width: 800px;
+  }
+}
 @media(max-width: 580px){
   .student-pictures {
     order: 1;
@@ -218,6 +242,9 @@ body {
   }
   #product-details {
    display: none;
+  }
+  #style-modal {
+    width: 440px;
   }
 }
 
