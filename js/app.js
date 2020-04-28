@@ -111,38 +111,37 @@ function displayCart(){
     })
     productContainer.innerHTML += `
     <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td id="empty-block"></td>
+    <td id="empty-block"></td>
+    <td id="empty-block"></td>
     <td>
       <div class="all-maven-text">
           <h3>Cart Totals</h3>
       </div>  
       </div> 
-          <div class="small all-maven-text">
-            Subtitle
-          </div>
-          <span class="all-maven-text"></span>
+        <div class="small all-maven-text text-left">
+          Subtitle
+        </div>
+          <span class="all-maven-text text-left"></span>
         </div>
         <hr>
-            <div class="small">
-              Vat(15%)
-            </div>
-            <p class="all-maven-text"></p>
+          <div class="small all-maven-text text-left">
+            Vat(15%)
           </div>
-          <hr>
-            <div class="small all-maven-text">
+          <p class="all-maven-text text-left"></p>
+          </div>
+        <hr>
+          <div class="small all-maven-text text-left">
               Total
-            </div>
-            <p class="all-maven-text"></p>
           </div>
-          <hr>
-              <button style="width: 150px;;" class="btn btn-outline-primary text-center">
-              <span class="all-maven-text">Enquire</span> 
-              </button>
-            </div>
-            </td>
-          </tr>
+            <p class="all-maven-text text-left"></p>
+          </div>
+        <hr>
+          <button style="width: 150px;;" class="btn btn-outline-primary text-center">
+            <span class="all-maven-text">Enquire</span> 
+          </button>
+      </td>
+    </tr>
     `
   }
 }

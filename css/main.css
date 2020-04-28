@@ -1,14 +1,12 @@
-* {
-  overflow-x: hidden;
-}
+
 body {
   background-color: #121212;
 }
 
 #main-table-cart {
   margin-top: 150px;
-  margin-left: 20px;
-  margin-right: 10px;
+  /* margin-left: 20px;
+  margin-right: 10px; */
   width: 100%;
 }
 
@@ -145,14 +143,11 @@ body {
 
 #cart-table {
   border-bottom: 1px solid #dbdbdb;
+  width: 100%;
 }
 
 #cart-table-amounts {
   margin-top: 2rem;
-}
-
-.image {
-  margin-left: 23rem;
 }
 
 #second-container {
@@ -183,26 +178,9 @@ body {
   line-height: 0.4;
 }
 
-@media(max-width: 500px){
-  #learn {
-    display: block;
-  }
-}
-
-@media(max-width: 500px){
-  .all-maven-text {
-    text-align: center;
-   }
-}
-
-@media(max-width: 500px){
-  #read{
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-  }
-}
-
+/* .student-picture and .information-sentence: This is to rearrange the students pictures in the students carousel so that the pictures appear on top of the text associated with them 
+#empty-block: This is displayed to none on small screens because i used these blocks to position my tiny  cart on the cart page, when i remove the empty blocks the tiny cart will position nicely on small screen sizes.
+*/
 @media(max-width: 580px){
   .student-pictures {
     order: 1;
@@ -212,43 +190,23 @@ body {
   .information-sentence {
     order: 2;
   }
-}
-
-@media(max-width: 328px){
-  #img1 {
+  #empty-block {
     display: none;
-  }
-  #img2 {
-    display: none;
-  }
-  #img3 {
-    display: none;
-  }
-}
-
-@media(max-width: 328px){
-  #links {
-    margin-left: none;
-  }
-  #course {
-    text-align: center;
-  }
-}
-
-@media(max-width: 578px){
-  #pre-work {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0%;
-  }
-  #findout {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-  }
+ }
 }
 
 @media(max-width: 500px){
+  .all-maven-text {
+    text-align: center;
+  }
+  #learn {
+    display: block;
+  }
+  #read{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
   .social-media-icons {
     margin-top: 0;
     float: none;
@@ -258,19 +216,10 @@ body {
     align-self: flex-start;
     margin: 5px 5px;
 }
-@media(max-width: 720px){
-    #ele {
-      font-size: 10px;
-      float: none;
-    }
 }
-@media(max-width: 720px){
-  #webDev {
-    width: 40px ;
-    height: 40px ;
-  }
-  #webDev1 {
-    width: 40px;
-    height: 40px;
-  }
+
+@media(max-width: 328px){
+ #product-details {
+   
+ }
 }
