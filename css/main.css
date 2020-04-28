@@ -215,11 +215,12 @@ body {
     float: left;
     align-self: flex-start;
     margin: 5px 5px;
-}
+  }
+  #product-details {
+   display: none;
+  }
 }
 
 @media(max-width: 328px){
- #product-details {
-   
- }
+ 
 }

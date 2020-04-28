@@ -89,7 +89,8 @@ function displayCart(){
   let cartItems = localStorage.getItem('productsInCart');
   cartItems = JSON.parse(cartItems);
   let productContainer = document.querySelector('.cart-container');
-  if( cartItems && productContainer ) {
+  let productContainerBelow = document.querySelector('.cartContainerBelow');
+  if( cartItems && productContainer && productContainerBelow) {
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
@@ -108,9 +109,11 @@ function displayCart(){
       $${item.inCart * item.price},00
       </td>
       `
-    })
-    productContainer.innerHTML += `
-    <tr>
+    }),
+    
+    Object.values(cartItems).map(item => {
+    productContainerBelow.innerHTML = '';  
+    productContainerBelow.innerHTML += `
     <td id="empty-block"></td>
     <td id="empty-block"></td>
     <td id="empty-block"></td>
@@ -134,16 +137,15 @@ function displayCart(){
           <div class="small all-maven-text text-left">
               Total
           </div>
-            <p class="all-maven-text text-left"></p>
+            <p class="all-maven-text text-left">$${item.inCart * item.price},00</p>
           </div>
         <hr>
           <button style="width: 150px;;" class="btn btn-outline-primary text-center">
             <span class="all-maven-text">Enquire</span> 
           </button>
       </td>
-    </tr>
     `
-  }
+  })}
 }
 
 onloadCartNumbers();
