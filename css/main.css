@@ -2,9 +2,21 @@
 body {
   background-color: #121212;
 }
+section h1 {
+  font-size: 40px;
+}
+/* Styling all text in all pages */
+.all-maven-text {
+  font-family: 'Titillium Web', sans-serif;
+}
 
+/* Header */
+/* Navbar color */
+.navbar-color {
+  background:linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), #36414c;
+}
 .nav-menu {
-  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .4))#36414c;
   padding: 30px;
   transition: all .7s;
 }
@@ -43,10 +55,6 @@ body {
   transition: all .7s;
 }
 
-section h1 {
-  font-size: 40px;
-}
-
 #main-table-cart {
   margin-top: 150px;
   /* margin-left: 20px;
@@ -58,32 +66,28 @@ section h1 {
   margin-top: 12px;
   margin-left: 1rem;
 }
-/* Styling all text in all pages */
-.all-maven-text {
-  font-family: 'Titillium Web', sans-serif;
-}
-/* Navbar color */
-.navbar-color {
-  background:linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .3)), #36414c;
-}
+/* End of Header */
 
-/* Main-Section */
+/*  Main Section  */
 .main-section {
   height: auto;
   background-color: rgba(91, 157, 227, 0.08);
 }
 
-/* main-body-section */
+/* End of Main Section */
+
+/* Main Body Section */
 .main-body-section {
   height: auto;
   background-color:  #ffffff;
 }
-/* main-course-section */
+/* End of Main Body Section */
+
+/* Main course section */
 .main-course-section {
   height: auto;
   background-color: rgba(91, 157, 227, 0.08);
 }
-
 .main-courses-columns {
   box-shadow: 0 5px 20px 0 rgba(25, 71, 128, 0.2);
   background-color: #ffffff;
@@ -93,37 +97,12 @@ section h1 {
   margin-bottom: 10rem;
   margin-top: 8rem;
 }
-/* career-section */
+/* End of Main course section  */
+
+/* Career section */
 .career-section {
   height: auto;
   background-color: whitesmoke;
-}
-
-.information-section {
-  background-color: #36414c;
-}
-
-.bottom-contact-section {
-  height: auto;
-  background-color: whitesmoke;
-}
-
-.bottom-section {
-  width: 100%;
-  height: auto;
-  background-color: #343a40;
-}
-
-.footer-section {
-  width: 100%;
-  height: 100%;
-  background-color: #36414c;
-}
-
-/* Courses page main-section */
-.second-container {
-  margin-top: 12px;
-  margin-bottom: 12px;
 }
 /* styling the owl carousel */
 .owl-wrapper {
@@ -131,7 +110,63 @@ section h1 {
   height: auto;
   overflow: hidden;
 }
-/* Creating the typing effect */
+
+/* End of Career section */
+
+/* Information Section */
+.information-section {
+  background-color: #36414c;
+}
+/* End of Information Section */
+
+/* Bottom Contact Section */
+.bottom-contact-section {
+  height: auto;
+  background-color: whitesmoke;
+}
+/* End of Bottom Contact Section */
+
+/* Bottom Section */
+.bottom-section {
+  width: 100%;
+  height: auto;
+  background-color: #343a40;
+}
+/* End of Bottom Section */
+
+/* Footer Section */
+.footer-section {
+  width: 100%;
+  height: 100%;
+  background-color: #36414c;
+}
+/* End of Footer Section */
+
+/* Courses page main-section */
+.second-container {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+#modal-x-button {
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 22px;
+  border: 1px solid #4a90e2;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 2rem;
+  color: #4e90e2;
+}
+
+#modal-submit-button {
+  border-radius: 25px;
+  font-family: 'Titillium Web', sans-serif;
+}
+/*End of  Courses page main-section */
+
+/*Creating the typing effect framework */
 #wordToggle {
   margin-right: 3px;
   border-right: solid 3px rgba(0, 255, 0, 0.75); /* This sets the cursor border and color and opacity*/
@@ -141,19 +176,27 @@ section h1 {
   color: rgba(255, 255, 255, 0.7);
   margin: 0 auto; /* This will ensure that scrolling effect as the typing happens */
 }
-/* Creating the animation for the typing effect */
+/* End of Creating the typing effect */
+
+/* invoking the animation for the typing effect */
 #wordToggle {
   animation: animated-text 3s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;
   /* This sets the cursor steps and the time of the steps*/
 }
+/* End of Creating the animation for the typing effect */
+
+/* Creating the funtionality of animation */
 @keyframes animated-text {
   from{width: 0;}
   to{width: 380px;}
 }
+/* This piece pertains to the cursor, its direction and color */
 @keyframes animated-cursor {
   from{border-right-color: rgba(0, 255, 0, 0.75);}
   to{border-right-color: transparent;}
 }
+/* End of Creating the funtionality of animation */
+
 #style-modal {
   position: fixed;
   top: 50%;
@@ -204,23 +247,6 @@ section h1 {
 #second-container {
  border-radius: 5px;
  box-shadow: 0 15px 30px 0 rgba(25, 71, 128, 0.2); 
-}
-
-#modal-x-button {
-  display: block;
-  height: 30px;
-  width: 30px;
-  line-height: 22px;
-  border: 1px solid #4a90e2;
-  border-radius: 15px;
-  text-align: center;
-  font-size: 2rem;
-  color: #4e90e2;
-}
-
-#modal-submit-button {
-  border-radius: 25px;
-  font-family: 'Titillium Web', sans-serif;
 }
 
 #close-button {
