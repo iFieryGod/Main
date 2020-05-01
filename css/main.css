@@ -3,6 +3,50 @@ body {
   background-color: #121212;
 }
 
+.nav-menu {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+  padding: 30px;
+  transition: all .7s;
+}
+
+.menu-item {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #eee;
+}
+
+.menu-item:hover {
+  color: #70aed2;
+  transition: color .5s;
+}
+
+.line1, .line2, .line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .line2 {
+ opacity: 0;
+}
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9));
+  transition: all .7s;
+}
+
+section h1 {
+  font-size: 40px;
+}
+
 #main-table-cart {
   margin-top: 150px;
   /* margin-left: 20px;
@@ -11,7 +55,7 @@ body {
 }
 
 #main-cart-icon {
-  margin-top: 9px;
+  margin-top: 12px;
   margin-left: 1rem;
 }
 /* Styling all text in all pages */
@@ -20,7 +64,7 @@ body {
 }
 /* Navbar color */
 .navbar-color {
-  background-color: #36414c;
+  background:linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .3)), #36414c;
 }
 
 /* Main-Section */
@@ -72,7 +116,7 @@ body {
 
 .footer-section {
   width: 100%;
-  height: 100px;
+  height: 100%;
   background-color: #36414c;
 }
 
@@ -89,6 +133,7 @@ body {
 }
 /* Creating the typing effect */
 #wordToggle {
+  margin-right: 3px;
   border-right: solid 3px rgba(0, 255, 0, 0.75); /* This sets the cursor border and color and opacity*/
   white-space: nowrap; /* Keeps the content on a single line */
   overflow: hidden; /*Ensures the content is not revealed until the animation*/ 

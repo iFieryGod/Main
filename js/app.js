@@ -1,4 +1,11 @@
 'use strict'
+
+$(document).ready(function() {
+  $('.nav-button').click(function() {
+    $('.nav-button').toggleClass('change');
+  });
+});
+
 let carts = document.querySelectorAll('.add-to-cart-btn');
 
 let products = [
