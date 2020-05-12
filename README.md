@@ -5,7 +5,7 @@ From your Gitbash you can clone this address https://github.com/iFieryGod/Main.g
 and use vs code to see it in live server.
 
 <h3>Prerequisites</h3>
-1. github
+ 1. github
 
 2. gitbash
 
