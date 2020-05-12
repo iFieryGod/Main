@@ -4,7 +4,7 @@ Getting Started
 From your Gitbash you can clone this address https://github.com/iFieryGod/Main.git
 and use vs code to see it in live server.
 
-<p>Prerequisites</p>
+<h3>Prerequisites</h3>
 1 github
 
 2 gitbash
@@ -13,7 +13,7 @@ and use vs code to see it in live server.
 
 4 internet access
 
-Installing
+<h3>Installing</h3>
 install VS Code from https://code.visualstudio.com/
 
 withing VS code install the extension live server.
