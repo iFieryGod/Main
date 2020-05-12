@@ -2,9 +2,9 @@
 This is my first attempt at building a website. it is an attempt to replicate the webpage from the Zeplin application.
 Getting Started
 From your Gitbash you can clone this address https://github.com/iFieryGod/Main.git
-
 and use vs code to see it in live server.
-Prerequisites
+
+#p Prerequisites
 1 github
 
 2 gitbash
