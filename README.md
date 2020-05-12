@@ -5,13 +5,13 @@ From your Gitbash you can clone this address https://github.com/iFieryGod/Main.g
 and use vs code to see it in live server.
 
 <h3>Prerequisites</h3>
- 1. github
+1. Github
 
-2. gitbash
+2. Gitbash
 
-3. visual studio code
+3. Visual studio code
 
-4. internet access
+4. Internet access
 
 <h3>Installing</h3>
 install VS Code from https://code.visualstudio.com/
